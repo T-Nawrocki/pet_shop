@@ -82,3 +82,10 @@ def add_pet_to_customer(customer, pet)
     customer[:pets].append(pet)
     return nil
 end
+
+# --- Extensions ---
+
+# returns true if customer can afford pet, else false
+def customer_can_afford_pet(customer, pet)
+    return customer_cash(customer) >= pet[:price]
+end
