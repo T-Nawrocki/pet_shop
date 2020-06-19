@@ -18,3 +18,9 @@ end
 def pets_sold(shop)
     return shop[:admin][:pets_sold]
 end
+
+# increases number of pets sold
+def increase_pets_sold(shop, amount)
+    shop[:admin][:pets_sold] += amount
+    return nil
+end
