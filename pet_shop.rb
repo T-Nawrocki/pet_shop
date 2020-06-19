@@ -89,3 +89,4 @@ end
 def customer_can_afford_pet(customer, pet)
     return customer_cash(customer) >= pet[:price]
 end
+
