@@ -60,3 +60,8 @@ def add_pet_to_stock(shop, pet)
     shop[:pets].append(pet)
     return nil
 end
+
+# gets customer's cash
+def customer_cash(customer)
+    return customer[:cash]
+end
