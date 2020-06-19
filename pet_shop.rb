@@ -71,3 +71,8 @@ def remove_customer_cash(customer, amount)
     customer[:cash] -= amount
     return nil
 end
+
+# gets number of pets owned by customer
+def customer_pet_count(customer)
+    return customer[:pets].length()
+end
