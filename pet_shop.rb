@@ -76,3 +76,9 @@ end
 def customer_pet_count(customer)
     return customer[:pets].length()
 end
+
+# adds a pet to  customer's pet array
+def add_pet_to_customer(customer, pet)
+    customer[:pets].append(pet)
+    return nil
+end
