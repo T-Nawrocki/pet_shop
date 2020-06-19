@@ -46,3 +46,11 @@ def find_pet_by_name(shop, name)
     end
     return nil
 end
+
+# removes pet with specified name from shop
+def remove_pet_by_name(shop, name)
+    for pet in shop[:pets]
+        shop[:pets].delete(pet) if pet[:name] == name
+    end
+    return nil
+end
