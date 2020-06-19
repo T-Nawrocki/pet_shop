@@ -24,3 +24,8 @@ def increase_pets_sold(shop, amount)
     shop[:admin][:pets_sold] += amount
     return nil
 end
+
+# gets number of pets currently in shop
+def stock_count(shop)
+    return shop[:pets].length()
+end
